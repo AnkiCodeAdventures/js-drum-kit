@@ -56,6 +56,23 @@
     <audio data-key="75" src="sounds/tom.wav"></audio>
     <audio data-key="76" src="sounds/tink.wav"></audio>
 
-    <script></script>
+    <script type="text/javascript">
+      const keysContainer = document.querySelector(".keys");
+
+      function handleUserInput(code) {
+        const audio = document.querySelector(`audio[data-key="${code}"]`);
+        console.log(audio);
+        console.log(code);
+
+        audio.play();
+      }
+
+      document.addEventListener("keypress", (event) => {
+        handleUserInput(event.charCode);
+      });
+      keysContainer.addEventListener("click", (event) => {
+        handleUserInput(event.target.dataset.key);
+      });
+    </script>
   </body>
 </html>
