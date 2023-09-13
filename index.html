@@ -67,8 +67,8 @@
         audio.play();
       }
 
-      document.addEventListener("keypress", (event) => {
-        handleUserInput(event.charCode);
+      document.addEventListener("keyup", (event) => {
+        handleUserInput(event.which);
       });
       keysContainer.addEventListener("click", (event) => {
         handleUserInput(event.target.dataset.key);
