@@ -1,2 +1,3 @@
 # js-drum-kit
-[Drum Kit](https://melodious-mooncake-344933.netlify.app/)
+
+[View Deployed Drum Kit](https://melodious-drums.netlify.app/)
